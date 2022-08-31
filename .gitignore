@@ -1,0 +1,4 @@
+src/__pycache__/
+notebooks/.ipynb_checkpoints*
+.idea/
+.DS_Store
