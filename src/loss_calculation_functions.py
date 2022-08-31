@@ -25,7 +25,7 @@ def risk_of_choosing_variant(_control_samples, _variant_samples):
     :param _variant_samples: samples from the variant posterior
     :return: float
     """
-    return 100 * np.sum([x for x in _control_samples - _variant_samples if x > 0]) / np.sum(_control_samples)
+    return 100 * np.mean([(c - v) * (c > v) / c for c, v in zip(_control_samples, _variant_samples)])
 
 
 def calculate_loss(

@@ -17,7 +17,7 @@ def is_go_or_nogo_loss(_loss_samples, _threshold_loss):
 
 def calculate_accuracy(_threshold_loss_go_or_nogo, _uplift_go_or_nogo):
     """
-    Calculate the accuracy associateed with rolling out features based on their loss
+    Calculate the accuracy associated with rolling out features based on their loss
     vs the true uplift
     :param _threshold_loss_go_or_nogo: list of booleans representing whether an experiment had a loss below
         a set threshold
